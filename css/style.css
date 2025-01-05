@@ -17,23 +17,26 @@ body {
 }
 
 .countdown-container {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 40px;
 }
 
 .countdown {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .time-block {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     flex: 1;
-    min-width: 80px;
+    min-width: 60px;
+    max-width: 120px;
+    text-align: center;
 }
 
 .time-block span {
@@ -68,7 +71,8 @@ body {
 /* Media query for smaller screens */
 @media (max-width: 480px) {
     .time-block {
-        padding: 15px;
+        padding: 10px;
+        font-size: 1.2em;
     }
 
     h1 {
