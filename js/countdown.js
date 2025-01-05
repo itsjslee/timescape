@@ -60,7 +60,7 @@ function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0,
 }
 
 // Add your events here
-createEventCountdown('Robot competition ready!', 2025, 2, 9, 8, 0);
+createEventCountdown('Robot complete!', 2025, 2, 9, 8, 0);
 createEventCountdown('Canadian Pacific Regional (BCVI)', 2025, 2, 16, 0, 0);
 createEventCountdown('Hawaii Regional (HIHO)', 2025, 3, 20, 0, 0); 
 createEventCountdown('World Championship (CMPTX)', 2025, 4, 16, 0, 0);
