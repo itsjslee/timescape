@@ -1,11 +1,11 @@
 // Function to create a countdown for an event
-function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0, second = 0, link = '') {
+function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0, second = 0, link = '', linkText = '') {
     // Create the HTML structure
     const eventDiv = document.createElement('div');
     eventDiv.className = 'event';
     
     const eventHTML = `
-        <h2>${eventName} <a href="${link}" target="_blank" style="text-decoration: none; color: inherit;">(BCVI)</a></h2>
+        <h2>${eventName} <a href="${link}" target="_blank" style="text-decoration: none; color: inherit;">${linkText}</a></h2>
         <div id="${eventName.replace(/\s+/g, '-').toLowerCase()}-countdown" class="countdown">
             <div class="time-block">
                 <span class="days">00</span>
@@ -59,8 +59,8 @@ function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0,
     setInterval(updateCountdown, 1000);
 }
 
-// Add your events here
-createEventCountdown('Robot complete!', 2025, 2, 9, 8, 0);
-createEventCountdown('Canadian Pacific Regional (BCVI)', 2025, 2, 16, 0, 0, 'https://frc-events.firstinspires.org/2025/BCVI');
-createEventCountdown('Hawaii Regional (HIHO)', 2025, 3, 20, 0, 0, 'https://frc-events.firstinspires.org/2025/HIHO'); 
-createEventCountdown('World Championship (CMPTX)', 2025, 4, 16, 0, 0, 'https://frc-events.firstinspires.org/2025/CMPTX');
+// Add your events here with the link and link text
+createEventCountdown('Robot complete!', 2025, 2, 9, 8, 0, 0, 'https://www.thebluealliance.com/team/2438', '');
+createEventCountdown('Canadian Pacific Regional', 2025, 2, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/BCVI', '(BCVI)');
+createEventCountdown('Hawaii Regional', 2025, 3, 20, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/HIHO', '(HIHO)');
+createEventCountdown('World Championship', 2025, 4, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/CMPTX', '(CMPTX)');
