@@ -16,6 +16,7 @@ body {
 
 .countdown-container {
     margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 .countdown {
@@ -47,4 +48,15 @@ body {
     font-size: 0.8em;
     color: #666;
     margin-top: 5px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+}
+
+.event {
+    margin-bottom: 100px;
 }
