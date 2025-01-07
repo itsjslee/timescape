@@ -59,7 +59,7 @@ function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0,
     setInterval(updateCountdown, 1000);
 }
 
-// Add your events here with the link and link text
+// Add your events here (name, year, month, day, hour, minute, second, event link, event code)
 createEventCountdown('Robot complete!', 2025, 2, 9, 8, 0, 0, 'https://www.thebluealliance.com/team/2438', '');
 createEventCountdown('Canadian Pacific Regional', 2025, 2, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/BCVI', '(BCVI)');
 createEventCountdown('Hawaii Regional', 2025, 3, 20, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/HIHO', '(HIHO)');
