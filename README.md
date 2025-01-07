@@ -10,7 +10,7 @@ Countdown site for Team 2438 events in the 2025 FRC season: REEFSCAPE
 Timescape is designed to be an open source template for all FRC teams in the 2025 season. To use Timescape for your own team, follow these steps.
 
 - Fork this repository into an empty folder 
-- Add/remove/edit the createEventCountdown functions (ln 62 in countdown.js) according to your team's events
+- Add/remove/edit the createEventCountdown function (ln 62 in countdown.js) according to your team's events
 - Edit the page title and header (ln 6 & 12 in index.html) with your team number
 - Edit the footer (ln 16-18 in index.html) as needed
 - Push the changes to a new repository
