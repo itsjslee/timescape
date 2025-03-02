@@ -1,5 +1,5 @@
 // Function to create a countdown for an event
-function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0, second = 0, link = '', linkText = '') {
+function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0, second = 0, link = '', linkText = '', endMessage = '', imageUrl = '') {
     // Create the HTML structure
     const eventDiv = document.createElement('div');
     eventDiv.className = 'event';
@@ -24,6 +24,7 @@ function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0,
                 <span class="label">Seconds</span>
             </div>
         </div>
+        ${imageUrl ? `<img src="${imageUrl}" alt="${eventName} image" style="max-width: 25%; margin-top: 10px;">` : ''}
     `;
     
     eventDiv.innerHTML = eventHTML;
@@ -39,7 +40,7 @@ function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0,
         const difference = targetDate - currentDate;
 
         if (difference <= 0) {
-            countdown.innerHTML = '<h3>Event has started!</h3>';
+            countdown.innerHTML = `<h3>${endMessage}</h3>`;
             return;
         }
 
@@ -59,8 +60,8 @@ function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0,
     setInterval(updateCountdown, 1000);
 }
 
-// Add your events here (name, year, month, day, hour, minute, second, event link, event code)
-createEventCountdown('Robot complete!', 2025, 2, 9, 8, 0, 0, 'https://www.thebluealliance.com/team/2438', '');
-createEventCountdown('Canadian Pacific Regional', 2025, 2, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/BCVI', '(BCVI)');
-createEventCountdown('Hawaii Regional', 2025, 3, 20, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/HIHO', '(HIHO)');
-createEventCountdown('World Championship', 2025, 4, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/CMPTX', '(CMPTX)');
+// Add your events here with the link, link text, custom end message, and image URL
+createEventCountdown('Robot complete!', 2025, 2, 9, 8, 0, 0, '', '', 'Ready for competition!', ''); // No image
+createEventCountdown('Canadian Pacific Regional', 2025, 2, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/BCVI', '(BCVI)', 'Congratulations, team! Onto the next.', '2025Impact.png'); // Image provided
+createEventCountdown('Hawaii Regional', 2025, 3, 20, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/HIHO', '(HIHO)', 'E ho\'okanaka \'oukou. Stand tall, be strong.', ''); // No image
+createEventCountdown('World Championship', 2025, 4, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/CMPTX', '(CMPTX)', 'It\s time for Worlds! Show them who you are.', ''); // No image
