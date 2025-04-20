@@ -64,4 +64,4 @@ function createEventCountdown(eventName, year, month, day, hour = 0, minute = 0,
 createEventCountdown('Robot complete!', 2025, 2, 9, 8, 0, 0, '', '', 'Ready for competition!', ''); // No image
 createEventCountdown('Canadian Pacific Regional', 2025, 2, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/BCVI', '(BCVI)', 'Congratulations, team! Onto the next.', '2025Impact.png'); // Image provided
 createEventCountdown('Hawaii Regional', 2025, 3, 20, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/HIHO', '(HIHO)', 'First robot finalist in 9 years!', ''); // No image
-createEventCountdown('World Championship', 2025, 4, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/CMPTX', '(CMPTX)', 'It\s time for Worlds! Show them who you are.', ''); // No image
+createEventCountdown('World Championship', 2025, 4, 16, 0, 0, 0, 'https://frc-events.firstinspires.org/2025/CMPTX', '(CMPTX)', 'What a way to end the season!', '2025finalist.png'); // No image
